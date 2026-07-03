@@ -1,4 +1,4 @@
-#  Smart NLP Chatbot
+# Smart NLP Chatbot
 
 > A university-level NLP project featuring a full-stack chatbot powered by **NLTK**, **TF-IDF**, and **Logistic Regression** — with a stunning React.js + Tailwind CSS frontend.
 
