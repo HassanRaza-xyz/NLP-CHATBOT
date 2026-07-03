@@ -1,0 +1,360 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good evening",
+        "Good afternoon", "Howdy", "What's up", "Greetings",
+        "Hi there", "Hey there", "Hello there", "Yo", "Sup"
+      ],
+      "responses": [
+        "Hello! I'm Smart NLP Bot. How can I help you today?",
+        "Hi there! Welcome! What can I assist you with?",
+        "Hey! Great to see you. What's on your mind?",
+        "Good day! I'm here to help. Ask me anything!"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Bye", "Goodbye", "See you", "See you later", "Later",
+        "Take care", "Farewell", "Good night", "Catch you later",
+        "I'm leaving", "Till next time", "Peace out", "Bye bye"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "See you later! Feel free to come back anytime.",
+        "Farewell! It was great chatting with you!",
+        "Take care! Come back if you need anything else."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful", "Thanks a lot",
+        "Thank you so much", "Much appreciated", "Cheers", "Thx",
+        "Many thanks", "I appreciate it", "You're a lifesaver"
+      ],
+      "responses": [
+        "You're welcome! Happy to help!",
+        "Glad I could assist! Anything else?",
+        "Anytime! That's what I'm here for.",
+        "My pleasure! Don't hesitate to ask more questions."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you", "How are you doing", "How is it going",
+        "How do you feel", "Are you okay", "What's new with you",
+        "How have you been", "You doing well?"
+      ],
+      "responses": [
+        "I'm doing great, thanks for asking! How can I help you?",
+        "I'm an AI, so always at 100%! What can I do for you?",
+        "Fantastic! Ready to assist you with anything.",
+        "All systems go! What would you like to know?"
+      ]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": [
+        "What is your name", "Who are you", "What should I call you",
+        "Are you a bot", "Are you human", "What are you",
+        "Tell me about yourself", "Introduce yourself"
+      ],
+      "responses": [
+        "I'm Smart NLP Bot, a university-built AI chatbot powered by NLTK and Machine Learning!",
+        "My name is Smart NLP Bot. I'm an AI assistant created for an NLP university project.",
+        "I'm an intelligent chatbot built using Natural Language Processing (NLP) techniques!",
+        "Call me NLP Bot! I use TF-IDF and Logistic Regression to understand your queries."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "What can you do", "What are your features", "How can you help",
+        "What do you know", "What are your capabilities", "Show me what you can do",
+        "Help me", "What topics do you cover"
+      ],
+      "responses": [
+        "I can answer university FAQs, discuss NLP concepts, help with general questions, and have casual conversations!",
+        "I'm capable of: answering university queries, explaining NLP concepts, and general chat. Try me!",
+        "My skills include: understanding natural language, answering FAQs, explaining AI/ML concepts, and more!"
+      ]
+    },
+    {
+      "tag": "nlp_what",
+      "patterns": [
+        "What is NLP", "Explain NLP", "What does NLP stand for",
+        "Tell me about natural language processing", "What is natural language processing",
+        "Define NLP", "What is text processing"
+      ],
+      "responses": [
+        "NLP stands for Natural Language Processing! It's a branch of AI that helps computers understand, interpret, and generate human language.",
+        "Natural Language Processing (NLP) is the field of AI focused on the interaction between computers and human language. It enables machines to read, understand, and derive meaning from text.",
+        "NLP combines linguistics and machine learning to allow computers to process, analyze, and understand human language in a useful way."
+      ]
+    },
+    {
+      "tag": "nlp_tokenization",
+      "patterns": [
+        "What is tokenization", "Explain tokenization", "How does tokenization work",
+        "What are tokens", "Define tokenization", "What is word tokenization"
+      ],
+      "responses": [
+        "Tokenization is the process of breaking text into individual units called tokens. For example, 'I love NLP' becomes ['I', 'love', 'NLP']. It's the first step in most NLP pipelines!",
+        "Tokenization splits text into smaller chunks (tokens). These can be words, sentences, or even characters. NLTK's word_tokenize() is a popular tool for this!",
+        "In NLP, tokenization means dividing a sentence into individual words or phrases (tokens). Example: 'Hello world' → ['Hello', 'world']. It's fundamental to text processing."
+      ]
+    },
+    {
+      "tag": "nlp_lemmatization",
+      "patterns": [
+        "What is lemmatization", "Explain lemmatization", "How does lemmatization work",
+        "What is the difference between stemming and lemmatization",
+        "What is WordNet lemmatizer"
+      ],
+      "responses": [
+        "Lemmatization reduces words to their base/dictionary form (lemma). For example, 'running' → 'run', 'better' → 'good'. Unlike stemming, it considers the word's context and part of speech!",
+        "Lemmatization converts words to their root form using vocabulary and morphological analysis. 'Caring' → 'care', 'Studies' → 'study'. NLTK's WordNetLemmatizer is widely used for this.",
+        "Lemmatization is smarter than stemming! It maps words to their meaningful base form using a dictionary. Example: 'wolves' → 'wolf', 'was' → 'be'."
+      ]
+    },
+    {
+      "tag": "nlp_stopwords",
+      "patterns": [
+        "What are stopwords", "Explain stopwords", "What is stopword removal",
+        "Why remove stopwords", "What words are stopwords"
+      ],
+      "responses": [
+        "Stopwords are common words like 'the', 'is', 'at', 'which' that appear frequently but carry little meaning. Removing them helps NLP models focus on important words!",
+        "Stopword removal is the process of filtering out high-frequency, low-meaning words from text. Examples: 'and', 'the', 'is', 'in'. NLTK has a built-in stopwords corpus!",
+        "Stopwords are words that don't contribute much to the overall meaning of text. By removing them, we reduce noise and improve model accuracy. Common stopwords: 'a', 'the', 'is', 'are'."
+      ]
+    },
+    {
+      "tag": "nlp_tfidf",
+      "patterns": [
+        "What is TF-IDF", "Explain TF-IDF", "How does TF-IDF work",
+        "What is term frequency inverse document frequency",
+        "What is vectorization"
+      ],
+      "responses": [
+        "TF-IDF stands for Term Frequency-Inverse Document Frequency. It measures how important a word is in a document relative to a collection of documents. Common words get lower scores!",
+        "TF-IDF is a numerical statistic used to reflect word importance. TF = how often a word appears in a doc. IDF = how rare the word is across all docs. High TF-IDF = important word!",
+        "TF-IDF is a feature extraction technique that converts text into numerical vectors. Words frequent in one document but rare overall get higher scores, making them more distinguishable."
+      ]
+    },
+    {
+      "tag": "nlp_intent",
+      "patterns": [
+        "What is intent recognition", "Explain intent classification",
+        "How does intent detection work", "What is intent in NLP",
+        "How do chatbots understand intent"
+      ],
+      "responses": [
+        "Intent recognition is the process of identifying what a user wants to accomplish from their message. For example, 'Book a flight' has the intent 'book_flight'. It's the core of chatbot intelligence!",
+        "Intent classification uses machine learning to categorize user inputs into predefined intents. Our bot uses Logistic Regression with TF-IDF features to classify your messages!",
+        "In NLP, intent recognition means understanding the purpose behind a user's message. A model is trained on labeled examples to predict which category (intent) a new message belongs to."
+      ]
+    },
+    {
+      "tag": "university_admission",
+      "patterns": [
+        "How do I apply for admission", "What is the admission process",
+        "How can I enroll", "When is the deadline for admission",
+        "What are the admission requirements", "How to get admission",
+        "What documents are needed for admission"
+      ],
+      "responses": [
+        "For university admission, you typically need to: 1) Submit an application form online, 2) Provide academic transcripts, 3) Submit a motivation letter, 4) Pass an entrance test if required. Check your university's official portal for specific deadlines!",
+        "Admission requirements generally include: academic records, identification documents, recommendation letters, and test scores. Visit the university admissions office or website for the exact process.",
+        "The admission process varies by university. Generally: fill online application → submit required documents → await verification → receive admission letter. Contact the registrar's office for details!"
+      ]
+    },
+    {
+      "tag": "university_courses",
+      "patterns": [
+        "What courses are available", "What programs do you offer",
+        "What subjects can I study", "What departments are there",
+        "What is the curriculum", "What majors are offered",
+        "What degree programs are available"
+      ],
+      "responses": [
+        "Universities typically offer programs in: Computer Science, Engineering, Business Administration, Medicine, Law, Social Sciences, Arts, and more! Check your university's academic catalog for the complete list.",
+        "Common university departments include: Science & Technology, Business, Humanities, Medical Sciences, Engineering, and Education. Each department offers multiple degree programs!",
+        "Most universities offer Bachelors, Masters, and PhD programs across various disciplines. Popular programs include CS, MBA, Engineering, and Data Science. Check the university website for details!"
+      ]
+    },
+    {
+      "tag": "university_fees",
+      "patterns": [
+        "How much is tuition", "What are the fees", "How much does it cost",
+        "What is the fee structure", "Tell me about tuition fees",
+        "What is the cost of education", "How much is the semester fee"
+      ],
+      "responses": [
+        "Tuition fees vary by program and institution. Typically, science and engineering programs cost more than arts programs. Contact the university's finance department for the exact fee structure!",
+        "Fee structures depend on the program, nationality (local/international), and mode of study. Most universities offer payment plans and scholarships. Check the finance office for details!",
+        "University fees include tuition, exam fees, lab fees, and miscellaneous charges. Many students qualify for financial aid or scholarships. Visit the university's financial services page!"
+      ]
+    },
+    {
+      "tag": "university_scholarships",
+      "patterns": [
+        "Are there scholarships available", "How can I get a scholarship",
+        "What financial aid is available", "Tell me about scholarships",
+        "How to apply for scholarship", "Merit scholarship information"
+      ],
+      "responses": [
+        "Many universities offer merit-based, need-based, and research scholarships! Merit scholarships are awarded based on academic performance. Contact the student services office for available opportunities.",
+        "Scholarship options typically include: academic merit awards, need-based grants, sports scholarships, and government-funded programs. Check your university's scholarship portal for eligibility criteria!",
+        "To apply for scholarships: maintain a high GPA, submit the scholarship application form, provide supporting documents, and write a strong personal statement. Deadlines vary, so apply early!"
+      ]
+    },
+    {
+      "tag": "university_library",
+      "patterns": [
+        "What are the library hours", "Tell me about the library",
+        "How can I access library resources", "Where is the library",
+        "Can I borrow books", "What resources does the library have"
+      ],
+      "responses": [
+        "The university library typically offers: physical books, e-journals, research databases, study rooms, and digital resources. Most libraries are open Monday-Friday 8AM-10PM and weekends 9AM-6PM.",
+        "University libraries provide access to: textbooks, research papers, journals (IEEE, Springer, etc.), computers, and quiet study spaces. You can access many resources online with your student ID!",
+        "Library resources include physical collections, online databases (JSTOR, PubMed, ScienceDirect), and interlibrary loan services. Visit the library portal with your student credentials!"
+      ]
+    },
+    {
+      "tag": "university_exams",
+      "patterns": [
+        "When are the exams", "Tell me about the exam schedule",
+        "How are exams conducted", "What is the grading system",
+        "How many exams are there", "What is the passing grade",
+        "How are marks calculated"
+      ],
+      "responses": [
+        "Exams are generally held at mid-semester (midterms) and end of semester (finals). Schedules are posted on the university portal. Grading typically uses GPA on a 4.0 scale!",
+        "Most universities conduct: quizzes, assignments, midterm exams, and final exams. The typical breakdown is: Quizzes 10%, Assignments 20%, Midterm 30%, Final 40%. Check your course outline!",
+        "Passing grades typically require 50-60% overall. GPA is calculated based on grade points (A=4.0, B=3.0, C=2.0, D=1.0, F=0). Maintain at least a 2.0 GPA to remain in good standing!"
+      ]
+    },
+    {
+      "tag": "university_accommodation",
+      "patterns": [
+        "Is there on-campus housing", "Tell me about the hostel",
+        "Where can I stay", "What accommodation is available",
+        "How much is the hostel fee", "Can I live on campus"
+      ],
+      "responses": [
+        "Many universities offer on-campus dormitories/hostels for students! Facilities typically include shared or private rooms, common areas, Wi-Fi, and meal plans. Apply early as spaces are limited!",
+        "On-campus accommodation options usually include: single rooms, double rooms, and dormitory-style housing. Off-campus options include nearby apartments. Contact the housing office for availability!",
+        "University hostels provide a safe and convenient living option. They usually have room options, cafeteria services, and 24/7 security. Application is done through the student services portal."
+      ]
+    },
+    {
+      "tag": "cs_programming",
+      "patterns": [
+        "What programming languages should I learn", "Best programming language",
+        "How to learn coding", "What is Python", "Teach me programming",
+        "Where to start with programming", "What is Java"
+      ],
+      "responses": [
+        "For beginners, Python is the best first language! It's readable, versatile, and widely used in AI/ML, web development, and data science. After Python, consider JavaScript, Java, or C++!",
+        "Top programming languages to learn: Python (AI/data), JavaScript (web), Java (enterprise), C++ (systems), and SQL (databases). Start with Python for the easiest learning curve!",
+        "Learning to code: Start with Python basics → practice on LeetCode → build small projects → contribute to open source. Online resources: Coursera, edX, freeCodeCamp, and CS50 are excellent!"
+      ]
+    },
+    {
+      "tag": "ai_ml",
+      "patterns": [
+        "What is machine learning", "Explain artificial intelligence",
+        "What is deep learning", "What is a neural network",
+        "How do AI systems work", "Difference between AI and ML",
+        "What is a large language model"
+      ],
+      "responses": [
+        "Machine Learning is a subset of AI where systems learn from data to make predictions without being explicitly programmed. It includes supervised, unsupervised, and reinforcement learning!",
+        "AI (Artificial Intelligence) is the broad concept of machines performing smart tasks. ML is a subset using statistical techniques. Deep Learning is a subset of ML using neural networks!",
+        "Neural networks are computing systems inspired by biological neurons. They process information through layers of nodes, learning patterns from data. They power modern AI like ChatGPT!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What is the weather today", "Tell me the weather",
+        "Is it going to rain", "What's the forecast",
+        "How is the weather outside"
+      ],
+      "responses": [
+        "I don't have access to real-time weather data, but you can check weather.com or Google for current weather conditions in your area!",
+        "I'm an NLP bot without internet access, so I can't check live weather. Try asking Google 'what's the weather today' for accurate forecasts!",
+        "For weather updates, I recommend checking AccuWeather, Weather Underground, or your phone's weather app. I focus on NLP and university questions!"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke", "Say something funny", "Make me laugh",
+        "Know any jokes", "Entertain me", "Say a joke please"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs! 😄",
+        "Why was the neural network stressed? It had too many layers of anxiety! 🤖",
+        "What do you call a sleeping dinosaur? A dino-snore! 😂 (Sorry, I specialize in NLP, not stand-up comedy!)",
+        "Why did the NLP model break up with the dataset? It said 'You have too many noisy labels!' 😆"
+      ]
+    },
+    {
+      "tag": "time_date",
+      "patterns": [
+        "What time is it", "What's today's date", "What day is it",
+        "What is the current time", "What year is it"
+      ],
+      "responses": [
+        "I don't have real-time clock access, but your device shows the current time! I'm better at answering NLP and university questions.",
+        "I can't check the current time as I'm a text-based AI. Check your device's clock or ask Google for exact time!",
+        "For current time and date, check the clock on your device. I'm more useful for NLP topics and university FAQs!"
+      ]
+    },
+    {
+      "tag": "project_info",
+      "patterns": [
+        "Tell me about this project", "What is this chatbot for",
+        "Who made this", "Is this a student project", "What university project is this",
+        "What NLP techniques are used", "How was this chatbot built"
+      ],
+      "responses": [
+        "This is a Smart NLP Chatbot built as a university project! It uses: NLTK for text preprocessing, TF-IDF for feature extraction, and Logistic Regression for intent classification. Frontend uses React.js with Tailwind CSS!",
+        "This chatbot was built for an NLP university subject! Technologies used: Python Flask (backend), React.js (frontend), NLTK, TF-IDF vectorizer, and Scikit-learn's Logistic Regression.",
+        "This project demonstrates core NLP concepts: tokenization, lemmatization, stopword removal, TF-IDF vectorization, and intent classification. It's a full-stack web application with dark/light mode!"
+      ]
+    },
+    {
+      "tag": "confusion",
+      "patterns": [
+        "I don't understand", "Can you repeat that", "What do you mean",
+        "I'm confused", "Explain that again", "That doesn't make sense",
+        "huh", "what", "???"
+      ],
+      "responses": [
+        "I'm sorry for the confusion! Could you rephrase your question? I'll do my best to help.",
+        "Let me try to clarify! Ask me about NLP concepts, university FAQs, or general topics and I'll explain clearly.",
+        "No worries! I might have misunderstood. Please ask your question again and I'll give it another try!"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "asdfgh", "qwerty", "test", "random text", "blah blah",
+        "xyzabc", "12345", "gibberish"
+      ],
+      "responses": [
+        "Hmm, I'm not sure I understand that. Could you rephrase? I can help with NLP concepts, university FAQs, or general questions!",
+        "I didn't quite catch that! Try asking about NLP techniques, university admissions, or say 'hi' to start a conversation.",
+        "That's a bit out of my knowledge area. I'm great at NLP topics and university questions though — give me a try!"
+      ]
+    }
+  ]
+}
